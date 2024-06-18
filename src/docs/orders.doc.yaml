@@ -1,0 +1,464 @@
+components:
+  schemas:
+    Order:
+      type: object
+      properties:
+        product_id:
+          type: string
+          description: Id del producto
+        quantity:
+          type: string
+          description: Cantidad del producto en la orden
+      example:
+        product_id: 660ae172c32b43ccaa6e9ab5,
+        quantity: 999,
+    OrderUser:
+      type: object
+      properties:
+        id: 
+          type: string
+          description: Id de la orden
+        user_id:
+          type: object
+          properties:
+            _id: 
+              type: string
+              description: Id del usuario de la orden
+            email:
+              type: string
+              description: mail del usuario
+            name:
+              type: string
+              description: nombre del usuario
+            role:
+              type: number
+              description:  rol del usuario
+            photo:
+              type: string
+              description: url de la foto del usuario
+            age:
+              type: number
+              description: edad del usuario 
+            verified:
+              type: string
+              description: si el usuario esta o no verificado 
+            verifiedCode:
+              type: string
+              description:  codigo de verificacion de la cuenta del usuario
+
+        product_id:
+          type: string
+          description: Id del producto
+        quantity:
+          type: string
+          description: Cantidad del producto en la orden
+        state: 
+          type: string
+          description: Indica el estado de la orden
+        createdAt: 
+          type: string
+          description: Timestamp de creacion
+        updatedAt:
+          type: string
+          description: Timestamp de modificacion
+        __v:
+          type: string
+          description: __v
+    
+
+
+  securitySchemes:
+    cookieAuth:     # aqui configuramos la autenticacion x cookie
+      type: apiKey
+      in: cookie
+      name: token
+  responses:
+    res201order:
+      type: object
+      properties:
+        statusCode:
+          type: number
+          descritpion: Successfull Status Code
+        response:
+          type: object
+          properties:
+            id: 
+              type: string
+              description: Id de la orden
+            user_id:
+              type: string
+              description: Id del usuario
+            product_id:
+              type: string
+              description: Id del producto
+            quantity:
+              type: string
+              description: Cantidad del producto en la orden
+            state: 
+              type: string
+              description: Indica el estado de la orden
+            createdAt: 
+              type: string
+              description: Timestamp de creacion
+            updatedAt:
+              type: string
+              description: Timestamp de modificacion
+            __v:
+              type: string
+              description: __v
+          description: Orden creada exitosamente
+      example:
+        statusCode: 201
+        response:
+          _id: 660b19a31adf92db62400ff0,
+          user_id: 660afcb9bf36c7ebc24bd1a4,
+          product_id: 660ae172c32b43ccaa6e9ab5,
+          quantity: 999,
+          state: reserved,
+          createdAt: 2024-04-01T20:31:31.395Z,
+          updatedAt: 2024-04-01T20:31:31.395Z,
+          __v: 0  
+
+    res200putdeleteorder:
+      type: object
+      properties:
+        statusCode:
+          type: number
+          descritpion: Successfull Status Code
+        response:
+          type: object
+          properties:
+            product_id:
+              type: string
+              description: Identificador del producto
+            quantity:
+              type: string
+              description: Cantidad del producto en la orden
+          description: Orden modificada exitosamente exitosamente
+      example:
+        statusCode: 200
+        response:
+          _id: 660b19a31adf92db62400ff0,
+          user_id: 660afcb9bf36c7ebc24bd1a4,
+          product_id: 660ae172c32b43ccaa6e9ab5,
+          quantity: 999,
+          state: reserved,
+          createdAt: 2024-04-01T20:31:31.395Z,
+          updatedAt: 2024-04-01T20:31:31.395Z,
+          __v: 0  
+    res401:
+      type: object
+      properties:
+        statusCode:
+          type: number
+          descritpion: Error Status Code
+        response:
+          type: string
+          description: Indica el tipo de error
+      example:
+        statusCode: 401
+        response: Bad auth!
+
+    res500:
+      type: object
+      properties:
+        status:
+          type: string
+          description: Error code
+        error:
+          type: string
+          description: Error message
+      example:
+        status: 500
+        error: Internal Server Error        
+    res200getorders:
+      type: object
+      properties:
+        statusCode:
+          type: integer
+          description: Successfull Code
+        response:
+          type: object
+          properties:
+            docs:
+              type: array
+              items:
+                $ref: '#components/schemas/OrderUser'
+            totalDocs:
+              type: integer
+              description: Cantidad total de Productos
+            offset:
+              type: integer
+              description: Offset, del listado
+            limit:
+              type: integer
+              description: Limite
+            totalPages:
+              type: integer
+              description: Cantidad total de paginas
+            page:
+              type: integer
+              description: Nro de pagina
+            pagingCounter:
+              type: integer
+              description: Pagina actual
+            hasPrevPage:
+              type: boolean
+              description: Indica si hay una pagina antes
+            hasNextPage:
+              type: boolean
+              description: Indica si hay una pagina despues
+            prevPage:
+              type: integer
+              description: Indica cual es el nro de la pagina anterior
+            nextPage:
+              type: integer
+              description: Indica cual es el nro de la pagina siguiente
+
+paths:
+  /api/orders:
+    post:
+      summary: To create an orden
+      tags:
+        - Orders
+      security:
+        - cookieAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/schemas/Order'
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res201order'
+        '401':
+          description: Error en la autenticacion
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res401'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res500'
+    get:
+      summary: To get the list of orders
+      tags:
+        - Orders
+      parameters:
+
+      responses:
+        '200':
+          description: data of the orders
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res200getorders'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res500'
+    put:
+      summary: Actualiza una orden
+      tags:
+        - Orders
+      parameters:
+        - name: oid
+          in: query
+          required: true
+          description: Id de la orden a modificar
+          schema:
+            type: Number  
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#components/schemas/Order'
+      responses:
+        '200':
+          description: data of the product
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res200putdeleteorder'
+        '401':
+          description: Error en la autenticacion
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res401'
+        '404':
+          description: Error, no se encuentra la orden
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res404'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res500'                
+
+    delete:
+      summary: Elimina la orden
+      tags:
+        - Orders
+      parameters:
+        - name: oid
+          in: query
+          required: true
+          description: Id de la orden a modificar
+          schema:
+            type: Number  
+      responses:
+        '200':
+          description: Orden elimnada con exito
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res200putdeleteorder'
+        '401':
+          description: Error en la autenticacion
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res401'
+        '404':
+          description: Error, no se encuentra la orden
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res404'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res500'                
+
+
+
+
+#    get:
+#      summary: To get the list of products
+#      tags:
+#        - Products
+#      parameters:
+#        - name: limit
+#          in: path
+#          required: false
+#          description: Cantidad maxima de productos por pagina
+#          schema:
+#           type: Number
+#        - name: page
+#          in: path
+#          required: false
+#          description: Nro de pagina a mostrar
+#          schema:
+#           type: Number  
+#      responses:
+#        '200':
+#          description: data of the product
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res200get'
+#        '500':
+#          description: Internal Server Error
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res500'                
+#    put:
+#      summary: Actualiza un producto
+#      tags:
+#        - Products
+#      requestBody:
+#        required: true
+#        content:
+#          application/json:
+#            schema:
+#              $ref: '#components/schemas/Product'
+#      parameters:
+#        - name: pid
+#          in: path
+#          required: true
+#          description: identificador del producto a modificar
+#          schema:
+#            type: String  
+#      responses:
+#        '200':
+#          description: data of the product
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res200putdelete'
+#        '401':
+#          description: Error en la autenticacion
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res401'
+#        '404':
+#          description: Error, no se encuentra el producto
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res404'
+#        '500':
+#          description: Internal Server Error
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res500'                
+#
+#    delete:
+#      summary: Elimina un producto
+#      tags:
+#        - Products
+#      parameters:
+#        - name: pid
+#          in: path
+#          required: true
+#          description: identificador del producto a eliminar
+#          schema:
+#            type: String  
+#      responses:
+#        '200':
+#          description: Data del producto eliminado
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res200putdelete'
+#        '401':
+#          description: Error en la autenticacion
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res401'
+#        '404':
+#          description: Error, no se encuentra el producto
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res404'
+#        '500':
+#          description: Internal Server Error
+#          content:
+#            application/json:
+#              schema:
+#                $ref: '#components/responses/res500'                
+#
+#
+#

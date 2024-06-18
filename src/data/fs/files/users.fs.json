@@ -1,0 +1,105 @@
+[
+  {
+    "_id": "aacf80328eba94762a7b1d2a",
+    "email": "borrar6@gmail.com",
+    "password": "borrar",
+    "name": "user",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 0,
+    "updatedAt": "2024-04-01T21:05:01.268Z",
+    "createdAt": "2024-04-01T21:05:01.268Z"
+  },
+  {
+    "_id": "c57faa79361e766bcbef47cd",
+    "email": "borrar10@gmail.com",
+    "password": "$2b$10$R24xA.pKW5EzZkcjK.8fxeauFNkOAKodjP30e/b7BZlAUTmAUA2OK",
+    "name": "joseluis",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 0,
+    "updatedAt": "2024-04-01T21:41:11.328Z",
+    "createdAt": "2024-04-01T21:41:11.328Z"
+  },
+  {
+    "_id": "e89e319e6e8fc03d58873f90",
+    "email": "borrar11@gmail.com",
+    "password": "$2b$10$bVBGchcKVbbvP7NSfcULR.69w/Mr4JdGjTnL/pTShrXsObFu9tK1a",
+    "name": "joseluis",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 0,
+    "updatedAt": "2024-04-01T21:42:02.890Z",
+    "createdAt": "2024-04-01T21:42:02.890Z"
+  },
+  {
+    "_id": "ae96fe8516291d8ea5716d87",
+    "email": "borrar12@gmail.com",
+    "password": "$2b$10$s81p3JUTDVZ3/imxUcQO8OmsK4ER4OrAHzkU6fS4g7bzpD1ieuv5O",
+    "name": "joseluis",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 0,
+    "updatedAt": "2024-04-01T21:43:00.328Z",
+    "createdAt": "2024-04-01T21:43:00.328Z"
+  },
+  {
+    "_id": "5129eff8e046cb8619a252ed",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$aPPxXaH17.q80PDyaqhkR.Fp9Rrha.bwy3lP793OYDQyrJhhrFvAO",
+    "name": "joseluis",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 1,
+    "updatedAt": "2024-04-01T21:47:50.857Z",
+    "createdAt": "2024-04-01T21:47:50.857Z"
+  },
+  {
+    "_id": "03820ace7ddb8e7934bd936f",
+    "email": "prem@gmail.com",
+    "password": "$2b$10$XFg91zBLDMnsMH5l/Mt2B.hvsfZjbzEmjLOn.QHKCfDLEx.Df3f9y",
+    "name": "joseluis",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 2,
+    "updatedAt": "2024-04-01T21:48:02.313Z",
+    "createdAt": "2024-04-01T21:48:02.313Z"
+  },
+  {
+    "_id": "4593e5c117e965d494cb0f7a",
+    "email": "user@gmail.com",
+    "password": "$2b$10$xvBsgsxHW7HWHjoB67on.ONjaWEjV0ziZBkONpdbvew8J1pPx4KnG",
+    "name": "joseluis",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 0,
+    "updatedAt": "2024-04-01T21:48:16.453Z",
+    "createdAt": "2024-04-01T21:48:16.453Z"
+  },
+  {
+    "_id": "4e49d0d0b26453f1df5bbbcd",
+    "email": "josel@gmail.com",
+    "password": "$2b$10$2gdFfYBLgVkNUykf/B9AOOU65aSrAiTJ.rJkAcjG7qbHZB/lwt.4e",
+    "name": "josel",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 1,
+    "verified": false,
+    "verifiedCode": "WtpJtAEtbfPZyjOa",
+    "updatedAt": "2024-05-29T18:58:57.009Z",
+    "createdAt": "2024-05-29T18:58:57.009Z"
+  },
+  {
+    "_id": "c59b2f0e207d70b028ccbcbb",
+    "email": "jos5.salsero@gmail.com",
+    "password": "$2b$10$/4n0uJrZ2v/6B8EUMxofJ./iJZj17ueEPewXc3iBhnNSbMK2HTVza",
+    "name": "joseluis",
+    "photo": "https://i.postimg.cc/wTgNFWhR/profile.png",
+    "age": 18,
+    "role": 0,
+    "verified": false,
+    "verifiedCode": "UUeRGtzXuV+CY+PM",
+    "updatedAt": "2024-05-29T19:10:42.884Z",
+    "createdAt": "2024-05-29T19:10:42.884Z"
+  }
+]

@@ -1,0 +1,28 @@
+{{! DIRECTAMENTE DISEÑAR LA PAGINA DE INICIO }}
+{{! desde el endpoint me envian el objeto con la propiedad events }}
+{{! para loopear los eventos, utilizao la sintaxis de each de hbs }}
+<main class="flex-grow-1 p-3 m-auto my-2">
+  <h1>Venta de Garage</h1>
+  <h3>{{date}}</h3>
+  {{#if products}}
+    <p>{{produ}}</p>
+  {{else}}
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+      eligendi possimus asperiores voluptate ea neque nam inventore blanditiis
+      maxime. Debitis doloremque voluptate sed voluptas natus vitae nostrum
+      illum ducimus fugit. Sit, quos reprehenderit. Pariatur amet delectus
+      placeat natus aliquid ea id ipsum sequi blanditiis cupiditate doloremque
+      magni repellat vitae, officia asperiores ullam cum adipisci enim dolores
+      maiores quo. Ab, aliquam. Natus sapiente hic animi, veniam aspernatur
+      veritatis. Veniam dolores inventore culpa et illo nostrum repudiandae non.
+      Laboriosam esse consequatur earum. Ea voluptatibus beatae perspiciatis
+      voluptatum voluptates sequi, harum quaerat. Quia?</p>
+  {{/if}}
+
+  <section class="d-flex flex-wrap  justify-content-evenly" id="products">
+    
+  </section>
+</main>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/real.js"></script>

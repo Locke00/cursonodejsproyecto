@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "ac0f1c774f2f75b2e3b0d683",
+    "user_id": "5129eff8e046cb8619a252ed",
+    "product_id": "dc67a66fe33702c98d7f0c72",
+    "quantity": "33",
+    "state": "reserved",
+    "updatedAt": "2024-04-01T20:51:39.665Z",
+    "createdAt": "2024-04-01T20:51:39.665Z"
+  },
+  {
+    "_id": "f05f861666e8dada35e0d362",
+    "user_id": "5129eff8e046cb8619a252ed",
+    "product_id": "31cfe5ba4edee26c7dae6ed0",
+    "quantity": "33",
+    "state": "reserved",
+    "updatedAt": "2024-04-01T21:49:30.714Z",
+    "createdAt": "2024-04-01T21:49:30.714Z"
+  },
+  {
+    "_id": "01eaf7abd8806e6e825e24d6",
+    "user_id": "5129eff8e046cb8619a252ed",
+    "product_id": "31cfe5ba4edee26c7dae6ed0",
+    "quantity": "33",
+    "state": "reserved",
+    "updatedAt": "2024-04-01T23:14:41.384Z",
+    "createdAt": "2024-04-01T23:14:41.384Z"
+  }
+]

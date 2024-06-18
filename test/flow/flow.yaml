@@ -1,0 +1,22 @@
+config:
+  plugins:
+    metrics-by-endpoint: {}  # Configuración del plugin para métricas por endpoint
+  target: http://localhost:8080/api  # Dirección base
+  phases:
+    - duration: 10  # Duración de la fase en segundos. La carga será de 5 segs
+      arrivalRate: 3  # Tasa de llegada de usuarios por segundo
+scenarios:
+  - name: login, read & signout  # Nombre del escenario
+    flow:
+      - log: login  # Log de inicio de sesión
+      - post:
+          url: /sessions/login  # URL de la solicitud POST para iniciar sesión
+          json:  # Cuerpo de la solicitud en formato JSON
+            email: jos3.salsero@gmail.com
+            password: jos3
+      - log: read
+      - get:
+          url: /products    # leo los productos
+      - log: signout  # Log de cierre de sesión
+      - post:
+          url: /sessions/signout  # URL de la solicitud POST para cerrar sesión

@@ -1,0 +1,226 @@
+[33mERROR[39m: Este es un log de ERROR
+[31mFATAL[39m: Este es un log FATAL
+[33mERROR[39m: Este es un log de ERROR
+[31mFATAL[39m: Este es un log FATAL
+ERROR: Este es un log de ERROR
+FATAL: Este es un log FATAL
+ERROR: Este es un log de ERROR
+FATAL: Este es un log FATAL
+ERROR: POST /api/loggers not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /api/docs/ not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /api/docs/ not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /api/docs/ not found path
+ERROR: GET /favicon.ico not found path
+ERROR: Cast to ObjectId failed for value "2134123412512345123434352323412342344" (type string) at path "_id" for model "products"
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB
+FATAL: Error al conectar a MongoDB--
+FATAL: Error al conectar a MongoDB--
+FATAL: Error al conectar a MongoDB--
+FATAL: Error al conectar a MongoDB--
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+ERROR: this.model.paginate is not a function
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+FATAL: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+ERROR: users validation failed: role: Cast to Number failed for value "admin" (type string) at path "role"
+ERROR: Cannot read properties of null (reading 'verifiedCode')
+ERROR: Cannot read properties of null (reading 'verifiedCode')
+ERROR: Cannot read properties of null (reading 'verifiedCode')
+ERROR: Cannot read property 'verifiedCode' of null
+ERROR: Cannot read properties of null (reading 'verifiedCode')
+ERROR: Cannot read properties of null (reading 'verifiedCode')
+ERROR: Cannot read properties of null (reading 'verifiedCode')
+ERROR: Cannot read properties of null (reading 'verifiedCode')
+ERROR: GET /api/users- not found path
+ERROR: data and salt arguments required
+ERROR: data and salt arguments required
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: data and salt arguments required
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: data and salt arguments required
+ERROR: data and salt arguments required
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: Cast to ObjectId failed for value "6669ecb2f960f29aa5c3262" (type string) at path "_id" for model "users"
+ERROR: ObjectId is not defined
+ERROR: ObjectId is not defined
+ERROR: There isn't any documents
+ERROR: POST /api/users/6669ecb2f960f29aa5c3262 not found path
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+ERROR: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+ERROR: Operation `products.countDocuments()` buffering timed out after 10000ms
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+ERROR: Client network socket disconnected before secure TLS connection was established
+ERROR: Operation `products.countDocuments()` buffering timed out after 10000ms
+FATAL: Client network socket disconnected before secure TLS connection was established
+FATAL: Client network socket disconnected before secure TLS connection was established
+ERROR: Client network socket disconnected before secure TLS connection was established
+FATAL: option server is not supported
+ERROR: Client network socket disconnected before secure TLS connection was established
+ERROR: Client network socket disconnected before secure TLS connection was established
+ERROR: Client network socket disconnected before secure TLS connection was established
+ERROR: Client network socket disconnected before secure TLS connection was established
+FATAL: option server is not supported
+ERROR: Client network socket disconnected before secure TLS connection was established
+FATAL: option server is not supported
+FATAL: Client network socket disconnected before secure TLS connection was established
+ERROR: Client network socket disconnected before secure TLS connection was established
+ERROR: products validation failed: title: Path `title` is required.
+ERROR: products validation failed: title: Path `title` is required.
+ERROR: products validation failed: title: Path `title` is required.
+ERROR: products validation failed: title: Path `title` is required.
+ERROR: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "users"
+ERROR: POST /api/order not found path
+ERROR: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "users"
+ERROR: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "users"
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: GET /styles.css not found path
+ERROR: GET /favicon.ico not found path
+ERROR: Cannot read property 'verifiedCode' of null
+ERROR: data and salt arguments required
+ERROR: data and salt arguments required
+ERROR: data and salt arguments required
+ERROR: data and salt arguments required
+ERROR: data and salt arguments required
+ERROR: GET /styles.css not found path
+ERROR: this.repository.report is not a function

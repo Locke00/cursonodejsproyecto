@@ -1,0 +1,301 @@
+components:
+  schemas:
+    Register:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the user
+        last_name:
+          type: string
+          description: Last name of the user
+        email:
+          type: string
+          description: Email of the user
+        password:
+          type: string
+          description: Password to log the user
+        role:
+          type: number
+      example:
+        name: Jorge
+        last_name: Rodriguez
+        email: jorgerodriguez@gmail.com
+        password: pass1234
+        role: 1
+  securitySchemes:
+    cookieAuth:     # aqui configuramos la autenticacion x cookie
+      type: apiKey
+      in: cookie
+      name: token
+  responses:
+    usersres201:
+      type: object
+      properties:
+        statusCode:
+          type: number
+          descritpion: Successfull Status Code
+        response:
+          type: object
+          properties:
+            email:
+              type: string
+              description: correo del usuario
+            password:
+              type: string
+              description: hash de la contraseña del usuario
+            name:
+              type: string
+              description: nombre del usuario
+            nameName:
+              type: string
+              description: apellido del usuario
+            role:
+              type: integer
+              description: nro de rol del usuario
+            photo:
+              type: string
+              description: url de la foto del usuario
+            age:
+              type: number
+              description: edad del usuario
+            verified:
+              type: boolean
+              description: indica si la cuenta esta verificada
+            verifiedCode:
+              type: string
+              description: codigo de verificacion
+            _id:
+              type: string
+              description: id del usuario
+            createdAt:
+              type: string
+              description: fecha de creacion
+            updatedAt:
+              type: string
+              description: fecha de actualizacion
+            __v:
+              type: integer
+              example: 0          
+          description: Datos del usuario creado, agregando id y timestamps
+      example:
+        statusCode: 201
+        response: 
+          email: jorgerodriguez@gmail.com,
+          password: $2b$10$GmbM7yn4yEWmO1q88EJxCefIZeWZAmgNndXDEY8tAzaevwHsV6kIe,
+          name: jorge,
+          lastName: rodriguez
+          role: 0,
+          photo: https://i.postimg.cc/wTgNFWhR/profile.png,
+          age: 18,
+          verified: false,
+          verifiedCode: VVbsHZ4xCLvH5KwZ,
+          _id: 6670acc5ae0ca3743a3e9137,
+          createdAt: 2024-06-17T21:38:13.226Z,
+          updatedAt: 2024-06-17T21:38:13.226Z,
+          __v: 0        
+    res200login:
+      type: object
+      properties:
+        statusCode:
+          type: integer
+          description: Successfull Code
+        response:
+          type: string
+          description: Successfull Message
+      example:
+        statusCode: 200
+        response: "Logged in"
+    res401login:
+      type: object
+      properties:
+        statusCode:
+          type: integer
+          description: Error Code
+        response:
+          type: string
+          description: Error Message
+      example:
+        statusCode: 401
+        response: "Bad auth!"
+    res200putdelete:
+      type: object
+      properties:
+        statusCode:
+          type: number
+          descritpion: Successfull Status Code
+        response:
+          type: object
+          properties:
+            title:
+              type: string
+              description: Titulo del producto
+            photo:
+              type: string
+              description: Url de una foto representativa del producto
+            price:
+              type: number
+              descripcion: Precio del producto
+            stock:
+              type: number
+              descripcion: cantidad de productos en stock
+            _id:
+              type: string
+              descripcion: identificador unico del producto
+            createdAt:
+              type: date
+              descripcion: fecha de creacion del producto
+            updatedAt:
+              type: date
+              descripcion: fecha de actualizacion del producto
+            __v:
+              type: number
+              descripcion:  version
+          description: Datos del producto modificado o elimnado
+      example:
+        statusCode: 200
+        response: 
+          title: wii8
+          photo: https://http2.mlstatic.com/D_NQ_NP_2X_813569-MLA32731593369_112019-F.webp
+          price: 40000
+          stock: 3
+          _id: 66426505acfeadfd7b4ebcaa
+          createdAt: 2024-05-13T19:07:49.410Z
+          updatedAt: 2024-05-13T19:07:49.410Z
+          __v: 0
+    res401:
+      type: object
+      properties:
+        statusCode:
+          type: number
+          descritpion: Error Status Code
+        response:
+          type: string
+          description: Indica el tipo de error
+      example:
+        statusCode: 401
+        response: Bad auth!
+
+    res404:
+      type: object
+      properties:
+        statusCode:
+          type: number
+          descritpion: Error Status Code
+        response:
+          type: string
+          description: Indica el tipo de error
+      example:
+        statusCode: 404
+        response: NOT FOUND
+
+
+paths:
+  /api/sessions/register:
+    post:
+      summary: To register an user
+      tags:
+        - Sessions-Users
+      requestBody:
+        required: true
+        description: data of the user
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Register'
+      responses:
+        '201':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/usersres201'
+        '401':
+          description: Error en la creación
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res401'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res500'                
+
+  /api/sessions/login:
+    post:
+      summary: login with an user
+      tags:
+        - Sessions-Users
+      parameters:
+        - name: email
+          in: path
+          required: true
+          description: correo de login
+          schema:
+            type: string
+        - name: password
+          in: path
+          required: true
+          description: Contraseña del usuario
+          schema:
+            type: string  
+      responses:
+        '200':
+          description: exito en el logueo del usuario
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res200login'
+        '401':
+          description: error en el logueo del usuario
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res401login'
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res500'                
+  /api/sessions/signout:
+    post:
+      summary: Desloguea el usuario
+      tags:
+        - Sessions-Users
+      responses:
+        '200':
+          description: Usuario deslogueado con exito
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  statusCode:
+                    type: integer
+                    example: 200
+                  response:
+                    type: string
+                    example: Signed out!
+        '401':
+          description: Error en el deslogueo del usuario
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  statusCode:
+                    type: integer
+                    example: 401
+                  response:
+                    type: string
+                    example: Bad auth!                    
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#components/responses/res500'                                    
+                    
